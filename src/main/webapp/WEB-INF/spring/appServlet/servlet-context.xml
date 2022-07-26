@@ -16,6 +16,7 @@
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" /> <!-- 정적 파일(고정적image, css, javascript) 저장 -->
+	<resources mapping="/img/**" location="/resources/images/" /> <!-- img의 모든 값으로 들어오게 되면 /resources/images 폴더를 확인함 -->
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> <!-- 경로 생성 - 경로 값을 넘겨주면 받아서 .jsp 경로 값을 붙여줌 -->
